@@ -23,15 +23,7 @@ source.
 The arena first allocates memory for the arena structure itself and then
 allocates a contiguous memory buffer using `malloc()`:
 
-```text
-arena_create()
-     │
-     ├── malloc(sizeof(arena))
-     │
-     └── malloc(capacity)
-              │
-              ▼
-        Arena memory buffer
+/**************************************************************************************************************/
 
 # Custom Virtual Memory Arena Allocator in C
 
